@@ -49,6 +49,10 @@ spec:
         taskSpec:
           workspaces:
             - name: source
+          stepTemplate:
+            env:
+              - name: "HOME"
+                value: "/tekton/home"
           steps:
             - name: noop-task
               image: registry.access.redhat.com/ubi9/ubi-micro
