@@ -14,7 +14,7 @@ metadata:
     appstudio.openshift.io/component: docker-pac-test-2-actb
     pipelines.appstudio.openshift.io/type: build
   name: docker-pac-test-2-actb-on-pull-request
-  namespace: oandriie-tenant
+  namespace: test
 spec:
   params:
   - name: dockerfile
